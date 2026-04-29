@@ -1,0 +1,38 @@
+:root {
+    --desert-sand: #e6c5a0;
+    --desert-gold: #c69466;
+    --desert-brown: #5d4037;
+    --desert-copper: #8e6241;
+    --off-white: #fdfaf5;
+    --text-dark: #3e2723;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+body { background-color: var(--desert-sand); color: var(--text-dark); scroll-behavior: smooth; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 8%; background: var(--desert-brown); position: fixed; width: 100%; z-index: 1000; border-bottom: 3px solid var(--desert-gold); }
+.logo { font-size: 1.6rem; font-weight: 900; color: var(--off-white); }
+.accent { color: var(--desert-gold); }
+.nav-links { display: flex; list-style: none; }
+.nav-links a { text-decoration: none; color: var(--desert-sand); padding: 0 15px; transition: 0.3s; }
+.btn-join { background: var(--desert-gold); color: var(--off-white) !important; padding: 8px 18px; border-radius: 4px; font-weight: 900; }
+
+.hero { height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(to bottom, var(--desert-sand), #d7b38c); padding-top: 80px; }
+.main-logo { width: 140px; border-radius: 50%; border: 4px solid var(--desert-brown); margin-bottom: 15px; }
+
+.section { padding: 80px 10%; }
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2.2rem; font-weight: 900; color: var(--desert-brown); position: relative; }
+.section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--desert-gold); margin: 10px auto; }
+
+/* تنسيق صناديق المعلومات */
+.lessons-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.lesson-box { background: var(--off-white); padding: 25px; border-radius: 10px; border-top: 5px solid var(--desert-copper); box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: 0.3s; }
+.lesson-box:hover { transform: translateY(-5px); }
+.lesson-box h3 { color: var(--desert-brown); margin-bottom: 10px; font-size: 1.4rem; }
+.lesson-box p { font-size: 0.95rem; line-height: 1.6; color: #555; }
+
+.staff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.staff-card { background: var(--off-white); padding: 25px; border-radius: 8px; text-align: center; border: 1px solid var(--desert-gold); }
+.sandy-bg { background: #dfba92; }
+
+footer { text-align: center; padding: 40px; color: var(--desert-brown); font-weight: 700; }
