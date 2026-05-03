@@ -1,62 +1,30 @@
-:root {
-    --deep-blue: #0a192f;
-    --accent-cyan: #64ffda;
-    --bataqa-white: #ffffff;
-    --sandy-bg: #dfba92;
+/* الإعدادات الأساسية لإخفاء الأقسام */
+.page-section { display: none; min-height: 100vh; padding-top: 100px; }
+.page-section.active { display: block; }
+
+/* تنسيق صفحة الدرس الكاملة */
+.lesson-full-page { 
+    background-color: #f4f7f6; color: #0a192f; padding: 120px 10% 50px; 
 }
-
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
-html { scroll-behavior: smooth; }
-body { background-color: var(--deep-blue); color: #fff; line-height: 1.6; }
-
-/* Navbar */
-.navbar { 
-    display: flex; justify-content: space-between; align-items: center; 
-    padding: 1.2rem 8%; background: rgba(10, 25, 47, 0.95); position: fixed; 
-    width: 100%; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.1); 
+.content-wrapper { 
+    max-width: 900px; margin: 0 auto; background: white; padding: 40px; 
+    border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); 
 }
-.accent { color: var(--accent-cyan); }
-.nav-links { display: flex; list-style: none; }
-.nav-links a { text-decoration: none; color: #ccd6f6; margin-right: 25px; transition: 0.3s; }
-
-/* Hero Section (المقدمة) */
-.hero { 
-    height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; 
-    padding: 0 15%; background: radial-gradient(circle, #112240 0%, #0a192f 100%);
+.back-btn { 
+    background: #0a192f; color: #64ffda; border: none; padding: 10px 20px; 
+    border-radius: 5px; cursor: pointer; margin-bottom: 20px; font-weight: bold; 
 }
-.badge { 
-    background: var(--accent-cyan); color: var(--deep-blue); padding: 5px 15px; 
-    border-radius: 20px; font-weight: 900; margin-bottom: 20px; display: inline-block; 
+.page-title { 
+    font-family: 'Amiri', serif; font-size: 2.8rem; border-bottom: 3px solid #dfba92; 
+    padding-bottom: 15px; margin-bottom: 30px; 
 }
-.islamic-title { font-family: 'Amiri', serif; font-size: 3.5rem; color: #fff; margin-bottom: 20px; }
-.intro-text { font-size: 1.2rem; color: #8892b0; max-width: 800px; margin: 0 auto 30px; }
-.btn-start { 
-    display: inline-block; padding: 12px 30px; border: 2px solid var(--accent-cyan); 
-    color: var(--accent-cyan); text-decoration: none; border-radius: 5px; font-weight: 700; transition: 0.3s;
-}
-.btn-start:hover { background: rgba(100, 255, 218, 0.1); }
+.lesson-article h3 { color: #112240; margin: 25px 0 15px; font-size: 1.5rem; }
+.lesson-article p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify; }
+.lesson-article ul, .lesson-article ol { padding-right: 25px; margin-bottom: 20px; }
+.lesson-article li { margin-bottom: 10px; font-size: 1.05rem; }
 
-/* الدروس */
-.sandy-bg { background-color: var(--sandy-bg); padding: 80px 8%; color: #0a192f; }
-.lessons-main-title { font-size: 2rem; margin-bottom: 40px; text-align: center; }
-
-.lessons-bataqat-grid { 
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; 
-}
-
-.bataqa-lesson { 
-    background: var(--bataqa-white); padding: 25px; border-radius: 12px; 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: right; 
-}
-.lesson-num { background: #f0f0f0; padding: 2px 10px; border-radius: 4px; font-size: 0.8rem; }
-.bataqa-lesson h3 { font-family: 'Amiri', serif; margin: 15px 0; color: #0a192f; }
-.bataqa-info { list-style: none; }
-.bataqa-info li { background: #f9f9f9; padding: 10px; margin-bottom: 5px; border-right: 4px solid var(--deep-blue); }
-
-/* الطلاب */
-.section { padding: 80px 8%; text-align: center; }
-.students-grid { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-.student-card { background: #112240; color: #fff; padding: 10px 20px; border-radius: 5px; }
-.student-card.highlight { border: 1px solid var(--accent-cyan); color: var(--accent-cyan); }
-
-footer { padding: 30px; text-align: center; background: #020c1b; color: #8892b0; }
+/* نفس تنسيقات الألوان السابقة للمقدمة والبطاقات */
+:root { --deep-blue: #0a192f; --accent-cyan: #64ffda; --sandy-bg: #dfba92; }
+.hero { background: radial-gradient(circle, #112240 0%, #0a192f 100%); text-align: center; color: white; }
+.sandy-bg { background-color: var(--sandy-bg); }
+.student-card.highlight { border: 2px solid var(--accent-cyan); transform: scale(1.05); }
