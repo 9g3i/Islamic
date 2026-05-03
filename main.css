@@ -1,63 +1,69 @@
 :root {
-    --deep-blue: #0a192f;
+    --bg-dark: #0a192f;
     --accent: #64ffda;
     --sandy: #dfba92;
     --white: #ffffff;
-    --danger: #e63946;
+    --danger: #ff4d4d;
+    --text-muted: #8892b0;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
 html { scroll-behavior: smooth; }
-body { background-color: var(--deep-blue); color: white; line-height: 1.8; }
 
-/* Header */
-.full-page-header {
+/* Hero Section */
+.hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
-                url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1920');
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex; align-items: center; justify-content: center; text-align: center;
-}
-
-.badge { background: var(--accent); color: var(--deep-blue); padding: 5px 20px; border-radius: 50px; font-weight: 900; margin-bottom: 25px; display: inline-block; }
-.islamic-title { font-family: 'Amiri', serif; font-size: 4rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-.intro-text { max-width: 800px; margin: 20px auto; font-size: 1.2rem; color: #ccd6f6; }
-
-/* Sections */
-.lesson-full-section {
-    min-height: 100vh;
-    padding: 100px 8%;
+    background: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1920') center/cover;
     display: flex; align-items: center; justify-content: center;
+    position: relative; text-align: center; color: white;
 }
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 25, 47, 0.85); }
+.hero-container { position: relative; z-index: 2; }
+.top-badge { background: var(--accent); color: var(--bg-dark); padding: 5px 20px; border-radius: 50px; font-weight: 900; margin-bottom: 20px; display: inline-block; }
+.main-title { font-family: 'Amiri', serif; font-size: 4.5rem; margin-bottom: 15px; }
+.hero-subtitle { color: var(--text-muted); font-size: 1.3rem; max-width: 700px; margin: 0 auto; }
 
-.sandy-bg { background-color: var(--sandy); }
-.blue-bg { background-color: #112240; }
-.red-accent-bg { background-color: #fff5f5; border-right: 15px solid var(--danger); }
+/* Lesson Sections */
+.lesson-section { padding: 120px 10%; min-height: 80vh; display: flex; align-items: center; }
+.light-section { background-color: var(--sandy); }
+.dark-section { background-color: #112240; }
+.warning-section { background-color: #fff5f5; border-right: 15px solid var(--danger); }
 
-.content-card {
-    background: white; padding: 60px; border-radius: 25px; width: 100%; max-width: 1000px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.2); color: #2d3436;
+.lesson-card {
+    background: white; padding: 60px; border-radius: 30px; width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15); color: #2d3436;
 }
-.white-card { background: var(--white); color: var(--deep-blue); }
+.dark-section .lesson-card { box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
 
-.lesson-tag { color: #8e959f; font-weight: 900; letter-spacing: 1px; display: block; margin-bottom: 15px; }
-.lesson-tag.danger { color: var(--danger); }
+.chapter-num { color: var(--sandy); font-weight: 900; font-size: 1rem; display: block; margin-bottom: 10px; }
+.dark-section .chapter-num { color: var(--accent); }
+.danger-tag { color: var(--danger); }
 
-h2 { font-family: 'Amiri', serif; font-size: 3rem; margin-bottom: 30px; border-bottom: 3px solid #eee; padding-bottom: 15px; }
-.danger-text { color: var(--danger); }
+h2 { font-family: 'Amiri', serif; font-size: 2.8rem; color: var(--bg-dark); margin-bottom: 30px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; }
+.danger-title { color: var(--danger); }
 
-.lesson-details p { font-size: 1.15rem; margin-bottom: 25px; text-align: justify; border-right: 5px solid var(--sandy); padding-right: 20px; }
-.blue-bg .lesson-details p { border-right-color: var(--accent); }
+.info-group { margin-bottom: 30px; }
+.info-group h4 { color: #555; margin-bottom: 10px; font-size: 1.2rem; }
+.info-group p { line-height: 2; font-size: 1.15rem; color: #444; text-align: justify; }
 
-/* Students */
-.students-footer { padding: 120px 10%; text-align: center; background: var(--deep-blue); }
-.students-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 50px; }
-.student-card { background: #172a45; padding: 20px 40px; border-radius: 12px; border: 1px solid #233554; font-size: 1.2rem; transition: 0.3s; }
-.student-card.high { border-color: var(--accent); color: var(--accent); transform: scale(1.1); font-weight: 900; }
-.student-card:hover { transform: translateY(-10px); background: var(--accent); color: var(--deep-blue); }
+/* Team Grid */
+.team-section { padding: 100px 8%; background: var(--bg-dark); text-align: center; }
+.team-title { font-family: 'Amiri', serif; font-size: 3rem; color: var(--accent); margin-bottom: 60px; }
+.team-grid { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.member { background: #172a45; color: white; padding: 15px 35px; border-radius: 12px; border: 1px solid #233554; transition: 0.3s; }
+.member.gold { border-color: var(--accent); color: var(--accent); transform: scale(1.1); font-weight: 900; }
+.member:hover { background: var(--accent); color: var(--bg-dark); }
 
-footer { padding: 40px; background: #020c1b; text-align: center; color: #8892b0; border-top: 1px solid #233554; }
+.final-footer { padding: 40px; background: #020c1b; text-align: center; color: var(--text-muted); border-top: 1px solid #233554; }
 
-.scroll-indicator { animation: bounce 2s infinite; font-weight: bold; margin-top: 40px; }
-@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-15px);} 60% {transform: translateY(-7px);} }
+/* Scroll Indicator */
+.mouse-scroll {
+    width: 30px; height: 50px; border: 2px solid var(--accent); border-radius: 20px;
+    margin: 40px auto 0; position: relative;
+}
+.mouse-scroll::before {
+    content: ''; width: 6px; height: 6px; background: var(--accent);
+    position: absolute; left: 50%; top: 10px; transform: translateX(-50%);
+    border-radius: 50%; animation: scroll 2s infinite;
+}
+@keyframes scroll { 0% {top: 10px; opacity: 1;} 100% {top: 30px; opacity: 0;} }
