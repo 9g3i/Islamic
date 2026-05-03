@@ -3,46 +3,61 @@
     --accent: #64ffda;
     --sandy: #dfba92;
     --white: #ffffff;
+    --danger: #e63946;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background-color: var(--deep-blue); color: white; line-height: 1.8; }
 
-/* نظام الصفحات */
-.page { display: none; min-height: 100vh; padding-top: 80px; transition: 0.5s; }
-.page.active { display: block; }
-
-body { background-color: var(--deep-blue); color: var(--white); }
-
-/* Navbar */
-.navbar { 
-    display: flex; justify-content: space-between; padding: 1.5rem 8%; 
-    background: rgba(10, 25, 47, 0.9); position: fixed; width: 100%; z-index: 100;
+/* Header */
+.full-page-header {
+    height: 100vh;
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex; align-items: center; justify-content: center; text-align: center;
 }
-.nav-links { display: flex; list-style: none; }
-.nav-links a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: bold; }
-.accent { color: var(--accent); }
 
-/* Hero Section */
-.hero { height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; }
-.badge { background: var(--accent); color: var(--deep-blue); padding: 5px 15px; border-radius: 20px; margin-bottom: 20px; display: inline-block; font-weight: bold; }
-.islamic-title { font-family: 'Amiri', serif; font-size: 3.5rem; margin-bottom: 20px; }
+.badge { background: var(--accent); color: var(--deep-blue); padding: 5px 20px; border-radius: 50px; font-weight: 900; margin-bottom: 25px; display: inline-block; }
+.islamic-title { font-family: 'Amiri', serif; font-size: 4rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+.intro-text { max-width: 800px; margin: 20px auto; font-size: 1.2rem; color: #ccd6f6; }
 
-/* القائمة الرملية */
-.sandy-bg { background: var(--sandy); color: var(--deep-blue); padding: 100px 10%; }
-.lessons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
-.lesson-card { background: var(--white); padding: 40px 20px; border-radius: 15px; cursor: pointer; transition: 0.3s; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-.lesson-card:hover { transform: scale(1.05); background: var(--accent); }
-.lesson-card.danger { border-top: 5px solid #e63946; }
+/* Sections */
+.lesson-full-section {
+    min-height: 100vh;
+    padding: 100px 8%;
+    display: flex; align-items: center; justify-content: center;
+}
 
-/* صفحة الدرس الكاملة */
-.lesson-content { background: #f4f7f6; color: #333; padding: 100px 10%; }
-.content-box { background: white; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-.back-btn { background: var(--deep-blue); color: var(--accent); border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-bottom: 30px; }
-.text-area h3 { color: var(--deep-blue); margin: 25px 0 10px; border-right: 4px solid var(--sandy); padding-right: 15px; }
-.text-area p { line-height: 2; font-size: 1.1rem; text-align: justify; }
+.sandy-bg { background-color: var(--sandy); }
+.blue-bg { background-color: #112240; }
+.red-accent-bg { background-color: #fff5f5; border-right: 15px solid var(--danger); }
 
-/* الطلاب */
-.students-list { display: flex; justify-content: center; gap: 20px; margin-top: 50px; flex-wrap: wrap; }
-.leader { border: 2px solid var(--accent); color: var(--accent); padding: 20px 40px; border-radius: 10px; font-size: 1.5rem; font-weight: 900; }
-.white { color: white; }
-.red-text { color: #e63946; }
+.content-card {
+    background: white; padding: 60px; border-radius: 25px; width: 100%; max-width: 1000px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2); color: #2d3436;
+}
+.white-card { background: var(--white); color: var(--deep-blue); }
+
+.lesson-tag { color: #8e959f; font-weight: 900; letter-spacing: 1px; display: block; margin-bottom: 15px; }
+.lesson-tag.danger { color: var(--danger); }
+
+h2 { font-family: 'Amiri', serif; font-size: 3rem; margin-bottom: 30px; border-bottom: 3px solid #eee; padding-bottom: 15px; }
+.danger-text { color: var(--danger); }
+
+.lesson-details p { font-size: 1.15rem; margin-bottom: 25px; text-align: justify; border-right: 5px solid var(--sandy); padding-right: 20px; }
+.blue-bg .lesson-details p { border-right-color: var(--accent); }
+
+/* Students */
+.students-footer { padding: 120px 10%; text-align: center; background: var(--deep-blue); }
+.students-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 50px; }
+.student-card { background: #172a45; padding: 20px 40px; border-radius: 12px; border: 1px solid #233554; font-size: 1.2rem; transition: 0.3s; }
+.student-card.high { border-color: var(--accent); color: var(--accent); transform: scale(1.1); font-weight: 900; }
+.student-card:hover { transform: translateY(-10px); background: var(--accent); color: var(--deep-blue); }
+
+footer { padding: 40px; background: #020c1b; text-align: center; color: #8892b0; border-top: 1px solid #233554; }
+
+.scroll-indicator { animation: bounce 2s infinite; font-weight: bold; margin-top: 40px; }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-15px);} 60% {transform: translateY(-7px);} }
