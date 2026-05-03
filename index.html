@@ -9,114 +9,157 @@
 </head>
 <body>
 
-    <!-- قسم الواجهة الرئيسية (Hero) -->
-    <header class="hero-section">
-        <div class="overlay"></div>
-        <div class="hero-container">
-            <div class="top-badge">مشروع الصف العاشر | 10-G1</div>
-            <h1 class="main-title">موسوعة التربية الإسلامية</h1>
-            <p class="hero-subtitle">شرح شامل وموسع لدروس المنهج الدراسي، تم إعداده وتطويره بواسطة طلاب القسم 10-G1</p>
-            <div class="mouse-scroll"></div>
+    <nav class="navbar">
+        <div class="logo">بوابة التربية <span class="accent">الإسلامية</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#lesson1">الدروس</a></li>
+            <li><a href="#students">فريق العمل</a></li>
+        </ul>
+    </nav>
+
+    <!-- قسم المقدمة -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">الصف العاشر 10-G1</div>
+            <h1 class="islamic-title">مرحباً بكم في منصتنا التعليمية</h1>
+            <p class="intro-text">
+                اليوم نقدم لكم معلومات إضافية وشروحات مبسطة لمنهج التربية الإسلامية. 
+                تم إنشاء وتطوير هذا الموقع بجهود ذاتية من قبل <strong>3 طلاب متميزين من صف 10-G1</strong>.
+            </p>
+            <a href="#lesson1" class="btn-start">ابدأ استكشاف الدروس</a>
         </div>
     </header>
 
-    <!-- تدفق المحتوى (الدروس) -->
-    <main class="content-flow">
+    <!-- أقسام الدروس (كل درس في صفحة كاملة) -->
 
-        <!-- الدرس الأول: موسى عليه السلام -->
-        <article class="lesson-section light-section">
-            <div class="lesson-card">
-                <header class="card-header">
-                    <span class="chapter-num">الدرس الأول</span>
-                    <h2>موسى نبي الله ﷺ (كليم الله)</h2>
-                </header>
-                <div class="card-body">
-                    <section class="info-group">
-                        <h4>النشأة والقدر الإلهي:</h4>
-                        <p>وُلد موسى عليه السلام في مصر في عام ذبح الأبناء، فأوحى الله لأمه أن تضعه في تابوت وتلقيه في النيل، ليلتقطه آل فرعون، وحرم الله عليه المراضع ليعود إلى حضن أمه، فنشأ في بيت الطاغية ليكون هلاكه على يديه.</p>
-                    </section>
-                    <section class="info-group">
-                        <h4>المعجزات التسع:</h4>
-                        <p>أيده الله بمعجزات عظيمة منها العصا التي تتحول لثعبان، واليد البيضاء التي تخرج شعاعاً من نور، وانفلاق البحر العظيم لنجاة بني إسرائيل، وآيات الطوفان والجراد والقمل والضفادع والدم.</p>
-                    </section>
+    <!-- الدرس 1 -->
+    <section id="lesson1" class="full-page-lesson lesson-bg-1">
+        <div class="content-box">
+            <span class="lesson-tag">الدرس الأول</span>
+            <h2 class="lesson-title">موسى نبي الله ﷺ</h2>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <span class="detail-label">المولد:</span>
+                    <p>وُلد في مصر في وقت كان يُقتل فيه أبناء بني إسرائيل، وحفظه الله في بيت فرعون.</p>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">المعجزات:</span>
+                    <p>أيده الله بالآيات التسع، ومن أبرزها العصا التي تحولت لثعبان، واليد البيضاء.</p>
                 </div>
             </div>
-        </article>
-
-        <!-- الدرس الثاني: حفظ السنة -->
-        <article class="lesson-section dark-section">
-            <div class="lesson-card">
-                <header class="card-header">
-                    <span class="chapter-num">الدرس الثاني</span>
-                    <h2>جهود العلماء في حفظ السنة النبوية</h2>
-                </header>
-                <div class="card-body">
-                    <section class="info-group">
-                        <h4>أهمية السنة وجمعها:</h4>
-                        <p>السنة هي المصدر الثاني للتشريع، وبدونها لا يمكن فهم تفاصيل العبادات. بدأت جهود التدوين الرسمية في عهد التابعين لحماية الحديث من الضياع والوضع.</p>
-                    </section>
-                    <section class="info-group">
-                        <h4>منهج التثبت (الإسناد):</h4>
-                        <p>ابتكر المسلمون نظام "سلسلة الرواة"، حيث لا يُقبل أي حديث إلا إذا كان متصلاً، مع فحص دقيق لعدالة وضبط كل راوٍ فيما عرف بعلم "الجرح والتعديل".</p>
-                    </section>
-                </div>
-            </div>
-        </article>
-
-        <!-- الدرس الثالث: طاعة ولي الأمر -->
-        <article class="lesson-section light-section">
-            <div class="lesson-card">
-                <header class="card-header">
-                    <span class="chapter-num">الدرس الثالث</span>
-                    <h2>طاعة ولي الأمر (أمان واستقرار)</h2>
-                </header>
-                <div class="card-body">
-                    <section class="info-group">
-                        <h4>الوجوب الشرعي:</h4>
-                        <p>طاعة ولي الأمر واجبة في المعروف، وهي ركيزة أساسية لحفظ أمن المجتمع وتنظيم شؤون الحياة، ومنع الفتن والفوضى التي قد تدمر مقدرات البلاد.</p>
-                    </section>
-                    <section class="info-group">
-                        <h4>المواطنة الإيجابية:</h4>
-                        <p>تشمل الطاعة الالتزام بكافة القوانين والأنظمة التي تضعها الدولة لتحقيق المصلحة العامة، مما يعزز قيم الولاء والانتماء للوطن وقيادته.</p>
-                    </section>
-                </div>
-            </div>
-        </article>
-
-        <!-- درس: خيانة الوطن -->
-        <article class="lesson-section warning-section">
-            <div class="lesson-card">
-                <header class="card-header">
-                    <span class="chapter-num danger-tag">تحذير شرعي</span>
-                    <h2 class="danger-title">خيانة الوطن (الجريمة الكبرى)</h2>
-                </header>
-                <div class="card-body">
-                    <section class="info-group">
-                        <h4>مفهوم الخيانة وخطورتها:</h4>
-                        <p>خيانة الوطن هي طعن في خاصرة المجتمع، وهي بيع الأمانة ومناصرة الأعداء ضد مصالح البلاد، وتعتبر من أقبح الأفعال التي تجرد الإنسان من مروءته ودينه.</p>
-                    </section>
-                    <section class="info-group">
-                        <h4>الواجب الوطني (10-G1):</h4>
-                        <p>واجبنا كطلاب هو الوقوف صفاً واحداً خلف قيادتنا الرشيدة، والتصدي للشائعات المغرضة، وحماية مقدرات وسمعة وطننا في كل المحافل الرقمية والواقعية.</p>
-                    </section>
-                </div>
-            </div>
-        </article>
-
-    </main>
-
-    <!-- قسم فريق العمل -->
-    <section class="team-section">
-        <h2 class="team-title">فريق العمل | 10-G1</h2>
-        <div class="team-grid">
-            <div class="member gold">علي سيف</div>
-            <div class="member gold">عبدالله عبيد</div>
-            <div class="member gold">سيف احمد</div>
+            <a href="#lesson2" class="scroll-indicator">الدرس التالي ↓</a>
         </div>
     </section>
 
-    <footer class="final-footer">
-        <p>بوابة التربية الإسلامية - مشروع طلاب 10-G1 &copy; 2026</p>
+    <!-- الدرس 2 -->
+    <section id="lesson2" class="full-page-lesson lesson-bg-2">
+        <div class="content-box">
+            <span class="lesson-tag">الدرس الثاني</span>
+            <h2 class="lesson-title">جهود العلماء في حفظ السنة</h2>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <span class="detail-label">الرحلة والجمع:</span>
+                    <p>بدأت جهود التدوين الرسمية في عهد التابعين لحماية الحديث من الضياع.</p>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">منهج التثبت:</span>
+                    <p>ابتكار علوم "الجرح والتعديل" و"علم الرجال" لفحص صدق الرواة.</p>
+                </div>
+            </div>
+            <a href="#lesson3" class="scroll-indicator">الدرس التالي ↓</a>
+        </div>
+    </section>
+
+    <!-- الدرس 3 -->
+    <section id="lesson3" class="full-page-lesson lesson-bg-1">
+        <div class="content-box">
+            <span class="lesson-tag">الدرس الثالث</span>
+            <h2 class="lesson-title">الإيمان بالغيب</h2>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <span class="detail-label">المفهوم:</span>
+                    <p>التصديق الجازم بكل ما غاب عن حواسنا كالملائكة والقدر واليوم الآخر.</p>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">الأثر:</span>
+                    <p>يورث المؤمن الطمأنينة ويدفعه لمراقبة الله في السر والعلن.</p>
+                </div>
+            </div>
+            <a href="#lesson4" class="scroll-indicator">الدرس التالي ↓</a>
+        </div>
+    </section>
+
+    <!-- الدرس 4 -->
+    <section id="lesson4" class="full-page-lesson lesson-bg-2">
+        <div class="content-box">
+            <span class="lesson-tag">الدرس الرابع</span>
+            <h2 class="lesson-title">طاعة ولي الأمر</h2>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <span class="detail-label">الأصل:</span>
+                    <p>قوله تعالى: "أطيعوا الله وأطيعوا الرسول وأولي الأمر منكم".</p>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">الأهداف:</span>
+                    <p>حفظ أمن المجتمع واستقراره وتنظيم شؤون الحياة العامة.</p>
+                </div>
+            </div>
+            <a href="#lesson5" class="scroll-indicator">الدرس التالي ↓</a>
+        </div>
+    </section>
+
+    <!-- الدرس 5 -->
+    <section id="lesson5" class="full-page-lesson lesson-bg-1">
+        <div class="content-box">
+            <span class="lesson-tag">الدرس الخامس</span>
+            <h2 class="lesson-title">ذو القرنين الرجل الصالح</h2>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <span class="detail-label">التمكين:</span>
+                    <p>أعطاه الله الأسباب والوسائل ليطوف الأرض وينشر العدل.</p>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">الدرس:</span>
+                    <p>القائد الصالح يسخر قوته لخدمة البشرية وحماية الضعفاء.</p>
+                </div>
+            </div>
+            <a href="#lesson6" class="scroll-indicator">الدرس التالي ↓</a>
+        </div>
+    </section>
+
+    <!-- الدرس 6 -->
+    <section id="lesson6" class="full-page-lesson lesson-bg-2">
+        <div class="content-box">
+            <span class="lesson-tag">الدرس السادس</span>
+            <h2 class="lesson-title">التسامح</h2>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <span class="detail-label">القيمة:</span>
+                    <p>خلق نبيل يدعو للعفو والتعايش السلمي واحترام الآخرين.</p>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">الأثر:</span>
+                    <p>بناء مجتمعات مترابطة تنبذ الكراهية والتعصب والفرقة.</p>
+                </div>
+            </div>
+            <a href="#students" class="scroll-indicator">فريق العمل ↓</a>
+        </div>
+    </section>
+
+    <section id="students" class="section">
+        <div class="container">
+            <h2 class="section-title">فريق إعداد المشروع (10-G1)</h2>
+            <div class="students-grid">
+                <div class="student-card highlight">علي سيف</div>
+                <div class="student-card highlight">عبدالله عبيد</div>
+                <div class="student-card highlight">سيف احمد</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>تم الإنشاء بواسطة طلاب 10-G1 &copy; 2026</p>
     </footer>
 
 </body>
