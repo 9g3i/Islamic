@@ -12,132 +12,94 @@
     <nav class="navbar">
         <div class="logo">بوابة التربية <span class="accent">الإسلامية</span></div>
         <ul class="nav-links">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#lessons-bataqat">المنهج الموسع</a></li>
-            <li><a href="#students">فريق العمل</a></li>
+            <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+            <li><a href="#" onclick="showPage('main-menu')">الدروس</a></li>
+            <li><a href="#" onclick="showPage('students-page')">فريق العمل</a></li>
         </ul>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <div class="badge">مشروع الصف العاشر 10-G1</div>
-            <h1 class="islamic-title">مرحباً بكم في منصتنا التعليمية</h1>
-            <p class="intro-text">
-                نقدم لكم اليوم موسوعة معلوماتية شاملة تغطي دروس الفصل الدراسي. 
-                تم إعداد هذا المحتوى ليكون مرجعاً إضافياً يجمع بين المتعة والفائدة، 
-                بإشراف وتصميم **3 طلاب من صف 10-G1**.
-            </p>
-        </div>
-    </header>
-
-    <main id="lessons-bataqat" class="section sandy-bg">
-        <div class="container-lessons">
-            <h2 class="lessons-main-title">تفاصيل الدروس المقررة (معلومات موسعة)</h2>
-            
-            <div class="lessons-bataqat-grid">
-
-                <!-- الدرس 1: موسى عليه السلام -->
-                <div class="bataqa-lesson full-content">
-                    <span class="lesson-num">الدرس الأول</span>
-                    <h3>موسى نبي الله ﷺ (قصة الثبات)</h3>
-                    <div class="info-block">
-                        <h4>النشأة والتحدي:</h4>
-                        <p>نشأ موسى عليه السلام في قصر فرعون، الطاغية الذي كان يذبح الأبناء، ولكن إرادة الله جعلت هلاك فرعون على يد طفل رُبي في بيته.</p>
-                        <h4>المعجزات التسع:</h4>
-                        <p>أيده الله بمعجزات حسية كبرى: العصا التي تلقف السحر، واليد التي تخرج بيضاء، والقمل، والضفادع، والدم، وانفلاق البحر العظيم.</p>
-                        <h4>الدروس والعبر:</h4>
-                        <p>نتعلم أن النصر مع الصبر، وأن التوكل على الله هو السلاح الأقوى في مواجهة الظلم والتمكين للحق.</p>
-                    </div>
-                </div>
-
-                <!-- الدرس 2: حفظ السنة -->
-                <div class="bataqa-lesson full-content">
-                    <span class="lesson-num">الدرس الثاني</span>
-                    <h3>جهود العلماء في حفظ السنة (الأمانة العلمية)</h3>
-                    <div class="info-block">
-                        <h4>مراحل التدوين:</h4>
-                        <p>مرت السنة بثلاث مراحل: الحفظ في الصدور، ثم التدوين في الصحف الخاصة، ثم الجمع الرسمي في الكتب والمسانيد كصحيح البخاري ومسلم.</p>
-                        <h4>علم الرجال والجرح:</h4>
-                        <p>ابتكر المسلمون أدق نظام نقدي في التاريخ "علم الإسناد"، حيث فحصوا حياة كل راوٍ بدقة متناهية لضمان صحة الحديث.</p>
-                        <h4>أهمية التشريع:</h4>
-                        <p>السنة هي الشارحة للقرآن، فبدونها لا نعرف تفاصيل الصلاة، ولا مقادير الزكاة، ولا مناسك الحج.</p>
-                    </div>
-                </div>
-
-                <!-- الدرس 3: الإيمان بالغيب -->
-                <div class="bataqa-lesson full-content">
-                    <span class="lesson-num">الدرس الثالث</span>
-                    <h3>الإيمان بالغيب (جوهر العقيدة)</h3>
-                    <div class="info-block">
-                        <h4>مفهوم الغيب:</h4>
-                        <p>هو كل ما لا يدركه الإنسان بحواسه الخمس وأخبر به الله، وينقسم إلى غيب مطلق (عند الله فقط) وغيب نسبي (يعلمه البعض دون الآخر).</p>
-                        <h4>مقتضيات الإيمان:</h4>
-                        <p>يشمل اليقين بالملائكة، والجن، والجنة والنار، والقدر خيره وشره، وهو أول صفة للمتقين في سورة البقرة.</p>
-                        <h4>الثمرة النفسية:</h4>
-                        <p>يحرر الإنسان من الخوف من المستقبل، ويمنحه الطمأنينة بأن مقادير الأمور بيد الخالق وحده.</p>
-                    </div>
-                </div>
-
-                <!-- الدرس 4: طاعة ولي الأمر -->
-                <div class="bataqa-lesson full-content">
-                    <span class="lesson-num">الدرس الرابع</span>
-                    <h3>طاعة ولي الأمر (أمان المجتمع)</h3>
-                    <div class="info-block">
-                        <h4>الأساس الشرعي:</h4>
-                        <p>قرن الله طاعة ولي الأمر بطاعته وطاعة رسوله في قوله: "أطيعوا الله وأطيعوا الرسول وأولي الأمر منكم"، لضمان وحدة الصف.</p>
-                        <h4>حدود الطاعة:</h4>
-                        <p>الطاعة تكون في المعروف وفيما يحقق مصلحة البلاد والعباد، ولا طاعة لمخلوق في معصية الخالق.</p>
-                        <h4>المواطنة الإيجابية:</h4>
-                        <p>الالتزام بالقوانين المرورية، والبيئية، والتعليمية هو جزء من طاعة ولي الأمر التي يؤجر عليها المسلم.</p>
-                    </div>
-                </div>
-
-                <!-- الدرس 5: ذو القرنين -->
-                <div class="bataqa-lesson full-content">
-                    <span class="lesson-num">الدرس الخامس</span>
-                    <h3>ذو القرنين (نموذج القوة العادلة)</h3>
-                    <div class="info-block">
-                        <h4>سر التسمية والرحلة:</h4>
-                        <p>سمي بذو القرنين لوصوله لمشارق الأرض ومغاربها، وكان ملكاً صالحاً مكنه الله في الأرض وأعطاه من كل شيء سبباً.</p>
-                        <h4>بناء السد العظيم:</h4>
-                        <p>استخدم تكنولوجيا متطورة (زبر الحديد والنحاس المذاب) لبناء سد عجزت عنه القوى البشرية آنذاك، لحماية الناس من الإفساد.</p>
-                        <h4>التواضع لله:</h4>
-                        <p>رغم قوته، نسب الفضل لله قائلاً: "هذا رحمة من ربي"، وهو درس لكل صاحب سلطة أو علم.</p>
-                    </div>
-                </div>
-
-                <!-- الدرس 6: التسامح -->
-                <div class="bataqa-lesson full-content">
-                    <span class="lesson-num">الدرس السادس</span>
-                    <h3>التسامح (رسالة السلام)</h3>
-                    <div class="info-block">
-                        <h4>التسامح في السيرة:</h4>
-                        <p>تجسد التسامح في عفو النبي ﷺ عن أهل مكة يوم الفتح قائلاً: "اذهبوا فأنتم الطلقاء"، مما كسب قلوب الناس للإسلام.</p>
-                        <h4>رؤية الإمارات:</h4>
-                        <p>تعتبر الدولة نموذجاً عالمياً للتسامح، حيث يعيش على أرضها أكثر من 200 جنسية في تناغم واحترام متبادل.</p>
-                        <h4>أثر التسامح:</h4>
-                        <p>يقلل الجرائم، وينهي الخصومات، ويقوي الروابط الاجتماعية، ويجعل الفرد يعيش في سلام داخلي وخارجي.</p>
-                    </div>
-                </div>
-
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="page active">
+        <header class="hero">
+            <div class="hero-content">
+                <div class="badge">الصف العاشر 10-G1</div>
+                <h1 class="islamic-title">مرحباً بكم في منصتنا التعليمية</h1>
+                <p class="intro-text">
+                    نقدم لكم اليوم معلومات إضافية وشروحات تفصيلية لمنهج التربية الإسلامية. 
+                    تم إنشاء هذا الموقع من قبل **3 طلاب من 10-G1** بهدف التميز الأكاديمي.
+                </p>
+                <button class="btn-start" onclick="showPage('main-menu')">استعرض الدروس الآن</button>
             </div>
-        </div>
-    </main>
+        </header>
+    </section>
 
-    <section id="students" class="section">
+    <!-- قائمة الدروس الرئيسية -->
+    <section id="main-menu" class="page sandy-bg">
         <div class="container">
-            <h2 class="section-title">فريق العمل (10-G1)</h2>
-            <div class="students-grid">
-                <div class="student-card highlight">علي سيف</div>
-                <div class="student-card highlight">عبدالله عبيد</div>
-                <div class="student-card highlight">سيف احمد</div>
+            <h2 class="section-title">فهرس الدروس التعليمية</h2>
+            <div class="lessons-grid">
+                <div class="lesson-card" onclick="showPage('lesson1')"><h3>موسى نبي الله ﷺ</h3><p>اضغط للتفاصيل</p></div>
+                <div class="lesson-card" onclick="showPage('lesson2')"><h3>حفظ السنة النبوية</h3><p>اضغط للتفاصيل</p></div>
+                <div class="lesson-card" onclick="showPage('lesson3')"><h3>الإيمان بالغيب</h3><p>اضغط للتفاصيل</p></div>
+                <div class="lesson-card" onclick="showPage('lesson4')"><h3>طاعة ولي الأمر</h3><p>اضغط للتفاصيل</p></div>
+                <div class="lesson-card" onclick="showPage('lesson5')"><h3>قصة ذي القرنين</h3><p>اضغط للتفاصيل</p></div>
+                <div class="lesson-card danger" onclick="showPage('lesson6')"><h3>خيانة الوطن</h3><p>درس هام جداً</p></div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>بوابة التربية الإسلامية | تم التطوير بواسطة طلاب صف 10-G1 &copy; 2026</p>
-    </footer>
+    <!-- صفحة الدرس 1: موسى عليه السلام -->
+    <section id="lesson1" class="page lesson-content">
+        <div class="content-box">
+            <button class="back-btn" onclick="showPage('main-menu')">← العودة للقائمة</button>
+            <h1>موسى نبي الله ﷺ</h1>
+            <div class="text-area">
+                <h3>الولادة والنشأة في قصر العدو</h3>
+                <p>وُلد موسى عليه السلام في عام قتْل الصبيان، فألهم الله أمه أن تضعه في التابوت وتلقيه في النيل. رُبي في بيت فرعون ليكون حجة عليه لاحقاً.</p>
+                <h3>الآيات التسع والمعجزات</h3>
+                <p>أيده الله بمعجزات عجز عنها البشر: العصا، اليد البيضاء، السنين، ونقص الثمرات، ثم انفلاق البحر العظيم الذي كان طريقاً لنجاة المؤمنين وغرق الظالمين.</p>
+                <h3>العبرة من القصة</h3>
+                <p>الصراع بين الحق والباطل أبدي، والنصر دائماً حليف المتقين مهما بلغت قوة الطغاة.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- صفحة الدرس 6: خيانة الوطن (مثال على الصفحة الكاملة) -->
+    <section id="lesson6" class="page lesson-content">
+        <div class="content-box">
+            <button class="back-btn danger-btn" onclick="showPage('main-menu')">← العودة للقائمة</button>
+            <h1 class="red-text">خيانة الوطن: الجريمة والجزاء</h1>
+            <div class="text-area">
+                <h3>مفهوم خيانة الوطن</h3>
+                <p>هي التنكر لفضل الأرض التي نشأ عليها الإنسان، والتعاون مع جهات خارجية للإضرار بأمن واستقرار المجتمع وولي الأمر.</p>
+                <h3>الحكم الشرعي والقانوني</h3>
+                <p>تعتبر الخيانة من كبائر الذنوب شرعاً لأنها تنقض عهد الأمان، وقانوناً هي "خيانة عظمى" تصل عقوبتها لأقصى الدرجات لخطورتها على حياة الملايين.</p>
+                <h3>دورنا كطلاب 10-G1</h3>
+                <p>يجب علينا أن نكون سداً منيعاً ضد الشائعات، وأن نحافظ على أسرار وطننا، ونعمل بإخلاص لرفعته في شتى المجالات.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- صفحة فريق العمل -->
+    <section id="students-page" class="page">
+        <div class="container text-center">
+            <h2 class="section-title white">فريق الإعداد 10-G1</h2>
+            <div class="students-list">
+                <div class="leader">علي سيف</div>
+                <div class="leader">عبدالله عبيد</div>
+                <div class="leader">سيف احمد</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showPage(pageId) {
+            // إخفاء كل الصفحات
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            // إظهار الصفحة المختارة
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo(0,0);
+        }
+    </script>
 </body>
 </html>
