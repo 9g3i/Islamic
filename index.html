@@ -12,101 +12,101 @@
     <nav class="navbar">
         <div class="logo">بوابة التربية <span class="accent">الإسلامية</span></div>
         <ul class="nav-links">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#lessons-bataqat">الدروس</a></li>
-            <li><a href="#students">فريق العمل</a></li>
+            <li><a href="#" onclick="showSection('home')">الرئيسية</a></li>
+            <li><a href="#" onclick="showSection('lessons-main')">الدروس</a></li>
+            <li><a href="#" onclick="showSection('students')">فريق العمل</a></li>
         </ul>
     </nav>
 
-    <!-- قسم المقدمة الجديد -->
-    <header id="home" class="hero">
+    <!-- القسم 1: الصفحة الرئيسية (المقدمة) -->
+    <header id="home" class="page-section active hero">
         <div class="hero-content">
             <div class="badge">الصف العاشر 10-G1</div>
             <h1 class="islamic-title">مرحباً بكم في منصتنا التعليمية</h1>
             <p class="intro-text">
                 اليوم نقدم لكم معلومات إضافية وشروحات مبسطة لمنهج التربية الإسلامية. 
-                تم إنشاء وتطوير هذا الموقع بجهود ذاتية من قبل <strong>3 طلاب متميزين من صف 10-G1</strong>، 
-                بهدف إثراء المحتوى التعليمي وتسهيل الدراسة على زملائنا.
+                تم إنشاء وتطوير هذا الموقع بجهود ذاتية من قبل <strong>طلاب متميزين من صف 10-G1</strong>.
             </p>
-            <a href="#lessons-bataqat" class="btn-start">ابدأ استكشاف الدروس</a>
+            <button class="btn-start" onclick="showSection('lessons-main')">استكشاف الدروس المقررة</button>
         </div>
     </header>
 
-    <main id="lessons-bataqat" class="section sandy-bg">
+    <!-- القسم 2: شبكة الدروس (القائمة) -->
+    <main id="lessons-main" class="page-section section sandy-bg">
         <div class="container-lessons">
-            <h2 class="lessons-main-title">شريحة عرض الدروس المقررة</h2>
-            
+            <h2 class="lessons-main-title">اختر درساً لتفاصيل أكثر</h2>
             <div class="lessons-bataqat-grid">
-
-                <!-- شريحة الدرس 1 -->
-                <div class="bataqa-lesson">
-                    <span class="lesson-num">الشريحة 1</span>
+                <!-- بطاقة الدرس 1 -->
+                <div class="bataqa-lesson" onclick="showSection('lesson1-page')">
+                    <span class="lesson-num">الدرس الأول</span>
                     <h3>موسى نبي الله ﷺ</h3>
-                    <ul class="bataqa-info">
-                        <li><strong>المولد:</strong> وُلد في مصر في وقت كان يُقتل فيه أبناء بني إسرائيل، وحفظه الله في بيت فرعون.</li>
-                        <li><strong>المعجزات:</strong> أيده الله بالآيات التسع، ومن أبرزها العصا التي تحولت لثعبان، واليد البيضاء.</li>
-                    </ul>
+                    <p>اضغط لعرض الصفحة الكاملة للشرح</p>
                 </div>
-
-                <!-- شريحة الدرس 2 -->
-                <div class="bataqa-lesson">
-                    <span class="lesson-num">الشريحة 2</span>
+                <!-- بطاقة الدرس 2 -->
+                <div class="bataqa-lesson" onclick="showSection('lesson2-page')">
+                    <span class="lesson-num">الدرس الثاني</span>
                     <h3>جهود العلماء في حفظ السنة</h3>
-                    <ul class="bataqa-info">
-                        <li><strong>الرحلة والجمع:</strong> بدأت جهود التدوين الرسمية في عهد التابعين لحماية الحديث من الضياع.</li>
-                        <li><strong>منهج التثبت:</strong> ابتكار علوم "الجرح والتعديل" و"علم الرجال" لفحص صدق الرواة.</li>
-                    </ul>
+                    <p>اضغط لعرض الصفحة الكاملة للشرح</p>
                 </div>
-
-                <!-- شريحة الدرس 3 -->
-                <div class="bataqa-lesson">
-                    <span class="lesson-num">الشريحة 3</span>
-                    <h3>الإيمان بالغيب</h3>
-                    <ul class="bataqa-info">
-                        <li><strong>المفهوم:</strong> التصديق الجازم بكل ما غاب عن حواسنا كالملائكة والقدر واليوم الآخر.</li>
-                        <li><strong>الأثر:</strong> يورث المؤمن الطمأنينة ويدفعه لمراقبة الله في السر والعلن.</li>
-                    </ul>
-                </div>
-
-                <!-- شريحة الدرس 4 -->
-                <div class="bataqa-lesson">
-                    <span class="lesson-num">الشريحة 4</span>
-                    <h3>طاعة ولي الأمر</h3>
-                    <ul class="bataqa-info">
-                        <li><strong>الأصل:</strong> قوله تعالى: "أطيعوا الله وأطيعوا الرسول وأولي الأمر منكم".</li>
-                        <li><strong>الأهداف:</strong> حفظ أمن المجتمع واستقراره وتنظيم شؤون الحياة العامة.</li>
-                    </ul>
-                </div>
-
-                <!-- شريحة الدرس 5 -->
-                <div class="bataqa-lesson">
-                    <span class="lesson-num">الشريحة 5</span>
-                    <h3>ذو القرنين الرجل الصالح</h3>
-                    <ul class="bataqa-info">
-                        <li><strong>التمكين:</strong> أعطاه الله الأسباب والوسائل ليطوف الأرض وينشر العدل.</li>
-                        <li><strong>الدرس:</strong> القائد الصالح يسخر قوته لخدمة البشرية وحماية الضعفاء.</li>
-                    </ul>
-                </div>
-
-                <!-- شريحة الدرس 6 -->
-                <div class="bataqa-lesson">
-                    <span class="lesson-num">الشريحة 6</span>
-                    <h3>التسامح</h3>
-                    <ul class="bataqa-info">
-                        <li><strong>القيمة:</strong> خلق نبيل يدعو للعفو والتعايش السلمي واحترام الآخرين.</li>
-                        <li><strong>الأثر:</strong> بناء مجتمعات مترابطة تنبذ الكراهية والتعصب والفرقة.</li>
-                    </ul>
-                </div>
-
+                <!-- يمكنك تكرار البطاقات لبقية الدروس هنا بنفس النمط -->
             </div>
         </div>
     </main>
 
-    <section id="students" class="section">
+    <!-- القسم 3: صفحة الدرس الأول (موسى عليه السلام) كاملة -->
+    <section id="lesson1-page" class="page-section lesson-full-page">
+        <div class="content-wrapper">
+            <button class="back-btn" onclick="showSection('lessons-main')">← العودة للدروس</button>
+            <h1 class="page-title">موسى نبي الله ﷺ</h1>
+            <div class="page-body">
+                <article class="lesson-article">
+                    <h3>المقدمة والنشأة</h3>
+                    <p>وُلد كليم الله موسى عليه السلام في مصر في عام كان فرعون يقتل فيه كل مولود ذكر من بني إسرائيل. أوحى الله لأمه أن تضعه في التابوت وتلقيه في اليم، ليلتقطه آل فرعون وينشأ في قصر عدوه تحت رعاية الله وعنايته.</p>
+                    
+                    <h3>المعجزات الإلهية</h3>
+                    <p>أيد الله نبيه موسى بآيات باهرة لتقوية حجته أمام فرعون:</p>
+                    <ul>
+                        <li><strong>العصا:</strong> التي تحولت إلى ثعبان عظيم وابتلعت سحر السحرة.</li>
+                        <li><strong>اليد البيضاء:</strong> التي كانت تخرج من جيبه بيضاء من غير سوء تشع نوراً.</li>
+                        <li><strong>انفلاق البحر:</strong> حيث ضرب البحر بعصاه فانشق ليعبر بنو إسرائيل بسلام.</li>
+                    </ul>
+
+                    <h3>الدروس المستفادة</h3>
+                    <p>نتعلم من قصة موسى عليه السلام أن الحق دائماً ينتصر على الباطل مهما بلغت قوة الظالم، وأن الثقة بالله هي مفتاح النجاة في أصعب الظروف.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم 4: صفحة الدرس الثاني (حفظ السنة) كاملة -->
+    <section id="lesson2-page" class="page-section lesson-full-page">
+        <div class="content-wrapper">
+            <button class="back-btn" onclick="showSection('lessons-main')">← العودة للدروس</button>
+            <h1 class="page-title">جهود العلماء في حفظ السنة النبوية</h1>
+            <div class="page-body">
+                <article class="lesson-article">
+                    <h3>أهمية السنة النبوية</h3>
+                    <p>السنة النبوية هي المصدر الثاني للتشريع الإسلامي، وهي التي تفصل أحكام القرآن الكريم وتبين كيفية أداء العبادات.</p>
+
+                    <h3>مراحل حفظ وتدوين السنة</h3>
+                    <ol>
+                        <li><strong>المرحلة الأولى:</strong> الحفظ في الصدور والكتابة الفردية في عهد الصحابة.</li>
+                        <li><strong>التدوين الرسمي:</strong> بدأ في عهد الخليفة عمر بن عبد العزيز لحماية الأحاديث من الضياع.</li>
+                        <li><strong>التصنيف الدقيق:</strong> ظهور الكتب الستة (البخاري ومسلم وغيرهم) وتطوير علوم الحديث.</li>
+                    </ol>
+
+                    <h3>علم الإسناد</h3>
+                    <p>قال العلماء: "الإسناد من الدين"، ولذلك ابتكروا علم الجرح والتعديل لفحص حياة الرواة والتأكد من صدقهم ودقتهم قبل قبول أي حديث نبوي.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم 5: فريق العمل -->
+    <section id="students" class="page-section section">
         <div class="container">
             <h2 class="section-title">فريق إعداد المشروع (10-G1)</h2>
             <div class="students-grid">
-                <!-- الطلاب الثلاثة  -->
                 <div class="student-card highlight">علي سيف</div>
                 <div class="student-card highlight">عبدالله عبيد</div>
                 <div class="student-card highlight">سيف احمد</div>
@@ -115,8 +115,21 @@
     </section>
 
     <footer>
-        <p>تم الإنشاء بواسطة طلاب 10-G1 &copy; 2026</p>
+        <p>بوابة التربية الإسلامية - طلاب 10-G1 &copy; 2026</p>
     </footer>
 
+    <!-- JavaScript للتحكم في عرض الصفحات -->
+    <script>
+        function showSection(sectionId) {
+            // إخفاء جميع الأقسام
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // إظهار القسم المطلوب
+            document.getElementById(sectionId).classList.add('active');
+            // الصعود لأعلى الصفحة تلقائياً
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 </html>
